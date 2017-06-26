@@ -1,0 +1,86 @@
+Enumerable
+
+Tong quan
+	Provide for collections class : traversal, searching methods, ability to sort.
+	Collection class must have (each method -> se duoc goi khi cho moi phan tu trong collection).
+	sort,max,min           -> colelction must define <=> operator
+
+
+Public instance method
+	all?{|obj| #return some}           : if no block given -> each element pass to block.
+	any? { |obj| block }				: if no block given -> each element pass to block.
+
+
+Duyet phan tu:
+	collect :									: If no block -> Return Enumerator
+	collect_concat { |obj| block }				: Return the array :concat of all element return. If no block -> Return Enumerator
+	map											: If no block -> Return Enumerator
+	each
+	cycle(n=nil) { |obj| block } -> nil or enumerator				: Tuong tu each nhung chay n lan. Return nil if success(no interupt).
+	each_with_index(*args) { |obj, i| block } → enum click to toggle source
+
+Dem
+	count
+
+	drop_while { |obj| block } → array
+	drop(n)    -> Array
+
+
+Tim
+	max	
+		max → obj												: Collection class must implement Comparable
+		max { |a, b| block } → obj								: block must use  <=>
+		max(n) → array 											: n phan tu max.
+		max(n) { |a, b| block } → Array
+
+	min: Tuong tu
+
+	take_while { |obj| block } → array
+	take_while → an_enumerators
+	take(n) 
+
+	sort:
+
+
+
+
+
+#code
+
+
+require 'byebug'
+
+
+class Item
+	attr_reader :a
+	def initialize a
+		@a = a
+	end
+
+	def <=> other
+		@a <=> other.a
+	end
+end
+
+class Crawler
+	include Enumerable
+	def initialize(from, to, step)
+		@from, @to, @step = from, to, step
+	end
+	def length
+		return 0 if @from > @to
+		Integer((@to-@from)/@step) + 1
+	end
+	def each
+		a = @from
+		while a <= 5
+			yield a
+			a+= @step
+			
+		end
+	end
+end
+# byebug
+cr = Crawler.new(1,10,3)
+# byebug
+puts cr.map{|item| item}
