@@ -1,0 +1,71 @@
+Class Array
+	include Enumerable
+end
+
+Can contain multi type element
+Create array:
+	literal constructor []
+	new(size, default_value)		: size, default_value are optional.    All default_value cung tro ve 1 object(chi nen s/																							d voi immutable object Symbols, numbers, true or false.)
+	.new(size) pass block:						can create multi dimension array(array with seperate object)
+
+Acess:
+	drop(n):	return cac phan tu con lai sau khi drop   : khong thay doi arr
+	take(n)		return n phan tu dau tien
+	[]
+	.at(i)
+	fetch(i, "default_error_message")
+
+
+Info:
+	size,length,count ------------
+	empty?
+	include?(object)
+
+Adding item
+	push(obj)
+	<< obj
+	unshift(obj)
+	insert(index, obj)
+
+Delete
+	delete(obj){}:		Delete all obj in array and return that. Or return message in block
+	delete_at:
+	shift				return object delete
+	pop					return obj delete
+	compact, compact!   : remove all nil obj
+	uniq:				remove obj trung nhau, de lai obj dau tien
+
+
+Iterator:
+	each:                 Do array include Enumerable
+	reverse_each:		
+	map, map!
+
+Select item array
+	drop_while {}
+	select {}
+	reject {}
+	delete_if {}:	thay doi array
+	keep_if {}:		thay doi array
+
+other public method:
+	[](*arg)
+	==,===,eql?,equal?
+
+
+
+
+
+
+
+
+Co may cach tao ra array
+Neu 5 cach access phan tu array
+Lay info array : chieu dai, co rong khong, co chua
+Add them item vao arr
+Iterator :  ke ten 3 iterator arr
+select item array: 
+phan biet 4 toan tu: == , ===, eql?, equal?
+selec item array: 5 cach
+=== : range , regex , ..
+size, length, count ruby . lenth alias size.   Count truyen block vao 
