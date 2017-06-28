@@ -47,9 +47,9 @@ Some function
 
     ruby.downcase
 
-    ruby.capitalize #=> Viết hoa chữ cái đầu
+    ruby.capitalize #=> Capitalize the first letter
 
-    ruby.swapcase #=> Hoa <-> thường
+    ruby.swapcase #=> Capitalize letter <-> Lowercase letter
 
     ruby.start_with? "ruby"
 
@@ -63,4 +63,4 @@ Some function
 
     puts "%10d" % 123
 
-    Truyền biến vào string #{name}
+    Transmit variable into string #{name}
