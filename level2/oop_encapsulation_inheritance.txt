@@ -1,0 +1,52 @@
+OOP trong Ruby
+1. encapsulation
+  - class:
+    la ban thiet ke cho object
+  - Object :
+    là sự kết hợp của data va methods.
+    object đưọc tạo ra từ class.
+
+    constructor
+      phuong thuc dac biet
+      tu dong goi den khi tao doi tuong
+      khong tra ve gia tri
+
+      thuoc tinh cua doi tuong la cac data item duoc nhom ben trong doi tuong: bien
+        instance duoc dinh nghia trong lop, moi doi tuong co 1 ban sao rieng
+
+      allocate: khong goi constructor
+        phan bo khong gian cho doi tuong moi cua class
+
+      constructor overloading:
+        khong co overloading, chi duoc mo phong qua cac gia tri mac dinh trong
+          ham khoi tao
+        thu tu doi so trong ham khoi tao la rat quan trong
+
+    phuong thuc (methods)
+      su dung de thuc hien cac hoat dong voi cac thuoc tinh cua doi tuong
+      the hien tinh dong goi
+      du lieu chi co the truy cap thong qua cac methods
+
+    Access modifiers: public, protected, private (method)
+     public: method mac dinh la public neu ko cung cap mua do truy cap, co the
+       truy cap ben trong va ben ngoai lop
+     private va protected: deu ko the truy cap ben ngoai dinh nghia lop
+        private khong the goi kem vs tu khoa self con protected thi duoc
+
+  - Ruby không cho phép truy cập vào trạng thái bên trong của một đối tượng từ bên ngoài,
+ bất kỳ truy cập nào như vậy phải được qua trung gian bởi phương thức accessor.
+
+2. Inheritance
+  - New class có thể thừa kế class đã đưọc định nghĩa từ trước.
+
+  - class có thể override hoặc extend function của lớp base.
+
+  - các lớp con được thừa kế biến class của lớp cha.
+
+  - Note: instance biến đều là private
+
+  - Sư khác biệt với các ngôn ngữ như C#, Java: private cũng được thừa kế
+
+  - khả năng truy cập của các phương thức public, private và protected và biến không bị ảnh hưởng bởi kế thừa
+
+=> tất cả các method (public, private, protected) và instance object variable được lớp con thừa kế từ lớp cha
