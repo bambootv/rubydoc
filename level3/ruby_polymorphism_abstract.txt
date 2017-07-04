@@ -1,0 +1,19 @@
+oop_II
+3. Abstraction
+  - Mô hình hóa các lớp, giảm sự phức tạp cho chương trinh
+  - Lớp abstract là 1 bản thiết kế chung cho nhiều đối tượng: gồm các phương thức mà
+các đối tượng thuộc lớp có hoặc không.
+  - Ruby không có từ khóa interface
+  - Lớp abstract không có hàm khởi tạo.
+  - Các subclass implement abstract class sẽ phải định nghĩa lại các abstract method muốn sử dụng
+của class abstract.
+  - gem abstraction
+  - gem abstract_method
+
+4. Polymorphism
+  - Cho phép thực thi phương thức với nhiều kiểu dữ liệu khác nhau.
+  - Cho phép định nghĩa lại các phương thức của lớp cha tại lớp con.
+  - Ruby không có từ khóa override
+
+rails application record
+self.abstract class = true
