@@ -1,6 +1,6 @@
 ### Methods
 
-#### 1.Example
+#### 1. Example
 
     class Car
       attr_reader :name, :price
@@ -24,18 +24,18 @@
     c1.name = "Porsche"
     c1.price = 23500
 
-#### 1.Define
+#### 2. Define
 
 Methods implement the functionality of your program.
 
 A method definition consists of the def keyword, a method name, the body of the method, return value and the end keyword.
 When called the method will execute the body of the method.
 
-#### 2.Return
+#### 3. Return
 
 If not return, the default returns the last statement.
 
-#### 3.Scope
+#### 4 .Scope
 
   Instance method
     ```
@@ -84,7 +84,7 @@ If not return, the default returns the last statement.
   => 42
   ```
 
-#### 4. Compare between function and method
+#### 5 . Compare between function and method
 
 a. Same
 
@@ -95,14 +95,21 @@ b. Diffrent
 
 1. About existence
 
+```
 Methods -> OOP (object orented programming)
-Funtion -> FP (functional programming).
+Function -> FP (functional programming)
+```
 
+```
 A method is on an object.
 A function is independent of an object.
+```
+
+```
 For Java, there are only methods, write in class.
 For C, there are only functions, write anywhere.
 For C++ it would depend on whether or not you're in a class
+```
 
 2. Call
 
