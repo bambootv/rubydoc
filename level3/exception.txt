@@ -1,0 +1,28 @@
+Exception:
+	raise boi function raise(Kernel) -  catch boi rescue(clause)
+	retry
+
+Raise exception(use Kernel raise method)
+	raise 						-> Raise exception in $! if it exist , otherwise raise RuntimeError
+	raise(exception, string)				-> Raise RuntimeError  with string
+	raise(string)
+	raise(exception [, string [, array]])
+
+Public class
+	inspect → string
+	backtrace	-> array
+	message -> string
+	cause   -> 
+
+$@ : contain backtrace
+$! : contain current exception
+
+begin
+rescue => e
+else
+ensure
+end
+
+What purpose of each exception
+
+VD: S/d 1 so gem post bai 

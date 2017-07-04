@@ -1,0 +1,62 @@
+D/n chung
+	collection of :   Constant + Method(instance method(implicit receiver) + Module method(explicit receiver))
+	Co the include module in module, class include/extend module.
+	Class con la class Module -> 1 so method dung duoc cho Class object
+
+
+Public class method:
+	.constants	-> Array			: List all constant in module or included module
+	.new {|mod| block}  -> Module   : create 1 anonymous module. If a block is given, it is passed the module 										object, and the block is evaluated in the context of this module like 									module_eval.
+	
+	.used_modules:				Return all module avaiable in current scope
+	.nesting
+	Callback
+		.extended(mod)				:mod -> name of module extend
+		.included(mod)				:mod -> name of module include
+		.prepend
+	remove_method(:method)
+	undef_method(:method)
+	prepend(module,.......)			: Tuong duong include module reverse_order
+
+
+
+
+
+
+
+
+
+.refine
+
+Public instance method:
+	< other, <=, <=> 	-> boolean            : True if module is sub of other.
+	ancestors: 		-> Array				 Return all module in list include
+	include?(other_module)		->boolean
+	included_modules     ->array
+	module_eval
+	.constant,
+
+
+
+
+
+
+
+
+Private
+
+
+
+
+Refine method, class in module
+obj.extend(module, ......):			object su dung duoc instance method cua cac module
+
+
+
+
+
+
+
+private,public,protected module func
+refine method,class
+module_eval
